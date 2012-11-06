@@ -1,0 +1,9 @@
+@CHARSET "Shift_JIS";
+
+body {
+}
+
+canvas{
+	width: 1680px;
+	height: 1050px;
+}

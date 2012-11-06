@@ -1,0 +1,11 @@
+@CHARSET "Shift_JIS";
+
+body {
+	text-align: senter;
+}
+
+canvas{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto; 
+}

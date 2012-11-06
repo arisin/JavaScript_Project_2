@@ -1,0 +1,33 @@
+/*//////////////////
+* レイアウトのテスト
+//////////////////*/
+
+onload = function(){
+	main();
+};
+
+function main(){
+	//画面のサイズを取得
+	var w = screen.availWidth;
+	var h = screen.availHeight;
+	console.log(h,w);
+	
+	//canvasタグを生成
+	var body = document.body;
+	var canvas = document.createElement('canvas');
+	
+	canvas.style.width = h + "px";
+	canvas.style.height = w +"px";
+	
+	body.appendChild(canvas);
+
+	if ( ! canvas || ! canvas.getContext ) { return false; }
+	var ctx = canvas.getContext('2d');
+	
+	//Imageオブジェクトを生成
+	var img = new Image();
+	img.src = "img/main-1.svg";
+//	body.appendChild(img);
+	//画像を描画
+	ctx.drawImage(img);
+}
